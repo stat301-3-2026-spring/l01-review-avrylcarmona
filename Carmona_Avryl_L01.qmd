@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Avryl Carmona"
+pagetitle: "L01 Avryl Carmona"
 date: today
 
 format:
@@ -26,9 +26,7 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[Avryl's Github](https://github.com/stat301-3-2026-spring/l01-review-avrylcarmona)
 :::
 
 ## Overview
@@ -46,7 +44,18 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Define the prediction problem and identify the target variable
+- Collect or access the relevant dataset
+- Clean and preprocess the data (handle missing values, outliers, etc)
+- Conduct exploratory data analysis (EDA) to understand patterns and relationships
+- Perform feature engineering or feature selection if needed
+- Split the data into training and testing sets (CV if needed)
+- Specify relevant models and create appropriate preprocessing recipes for the different models
+- Train multiple models, including hyperparameter tuning where appropriate
+- Evaluate and compare model performance using relevant metrics
+- Select the best-performing model
+- Assess final performance on the test dataset
+- Interpret the results and evaluate the model’s usefulness in context
 
 :::
 
@@ -57,7 +66,9 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Supervised learning involves training a model on labeled data, where both the input features and the corresponding outcome (target variable) are known. The goal is to learn the relationship between inputs and outputs in order to make accurate predictions on new, unseen data.
+
+Unsupervised learning, in contrast, uses unlabeled data where no target variable is provided. Instead of predicting an outcome, the goal is to identify underlying patterns, structures, or groupings within the data, such as clusters or latent relationships.
 
 :::
 
@@ -70,7 +81,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Descriptive models are used to summarize and describe patterns, trends, or relationships within a dataset. Their goal is to help understand what has happened in the data, rather than to make predictions or establish causal relationships.
 
 :::
 
@@ -79,7 +90,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential models are used to draw conclusions about relationships between variables and generalize findings from a sample to a larger population. Their goal is to assess the strength and significance of these relationships, often through methods such as hypothesis testing and confidence intervals.
 
 :::
 
@@ -88,7 +99,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Used to predict future or unseen outcomes as accurately as possible.
 
 :::
 
@@ -103,7 +114,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A model based on known relationships or theory about how variables interact (built from assumptions about the system).
 
 :::
 
@@ -114,7 +125,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A model built mainly from data patterns rather than prior theory (lets the data “speak for itself”).
 
 :::
 
@@ -125,7 +136,8 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Mechanistic models → usually parametric (assume a specific form, like linear regression)
+- Empirical models → often nonparametric (more flexible, fewer assumptions)
 
 :::
 
@@ -136,7 +148,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are generally easier to interpret because they are simpler and based on clear assumptions.
 
 :::
 
@@ -147,7 +159,8 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Mechanistic → less flexible
+- Empirically driven → more flexible
 
 :::
 
@@ -158,7 +171,9 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Mechanistic models → higher bias, lower variance
+- Empirical models → lower bias, higher variance
+- Tradeoff: simpler models may underfit, flexible models may overfit
 
 :::
 
@@ -169,7 +184,8 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Regression → predicts a continuous outcome (e.g., price, age)
+- Classification → predicts a categorical outcome (e.g., yes/no, churn/no churn)
 
 :::
 
@@ -180,7 +196,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Stratifying ensures that the distribution of the outcome variable is similar in both training and test sets, which makes evaluation more reliable.
 
 :::
 
