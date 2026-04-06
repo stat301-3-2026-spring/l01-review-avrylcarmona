@@ -2356,7 +2356,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Used to predict future or unseen outcomes as accurately as possible.</p>
+<p>Predictive models are used to generate accurate predictions of future or unseen outcomes based on patterns learned from existing data. Their goal is to optimize predictive performance, often by minimizing error on new data rather than focusing on interpretation or causal understanding.</p>
 </div>
 </div>
 </section>
@@ -2377,7 +2377,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A model based on known relationships or theory about how variables interact (built from assumptions about the system).</p>
+<p>A mechanistic model is based on known relationships, theory, or underlying principles that describe how variables interact within a system. It is constructed using assumptions about the processes that generate the data, rather than relying purely on patterns observed in the data.</p>
 </div>
 </div>
 </section>
@@ -2394,7 +2394,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A model built mainly from data patterns rather than prior theory (lets the data “speak for itself”).</p>
+<p>Empirically driven models are built primarily from patterns observed in the data, rather than from predefined theory or assumptions about underlying processes. They focus on using data to learn relationships and make predictions, allowing the data itself to guide the model structure.</p>
 </div>
 </div>
 </section>
@@ -2411,10 +2411,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Mechanistic models → usually parametric (assume a specific form, like linear regression)</li>
-<li>Empirical models → often nonparametric (more flexible, fewer assumptions)</li>
-</ul>
+<p>Mechanistic models are typically associated with parametric approaches, as they assume a specific functional form based on theory (e.g., linear regression). In contrast, empirically driven models are often nonparametric, allowing for more flexible structures with fewer assumptions about the underlying relationship between variables.</p>
 </div>
 </div>
 </section>
@@ -2431,7 +2428,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Mechanistic models are generally easier to interpret because they are simpler and based on clear assumptions.</p>
+<p>Mechanistic models are generally easier to interpret because they are based on clear assumptions and simpler, predefined relationships between variables. This structure makes it easier to understand how inputs influence outputs compared to more flexible, data-driven models.</p>
 </div>
 </div>
 </section>
@@ -2448,10 +2445,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Mechanistic → less flexible</li>
-<li>Empirically driven → more flexible</li>
-</ul>
+<p>Mechanistic models are typically less flexible because they rely on predefined functional forms and assumptions. In contrast, empirically driven models are more flexible, as they adapt to patterns in the data with fewer constraints on the model structure.</p>
 </div>
 </div>
 </section>
@@ -2468,11 +2462,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Mechanistic models → higher bias, lower variance</li>
-<li>Empirical models → lower bias, higher variance</li>
-<li>Tradeoff: simpler models may underfit, flexible models may overfit</li>
-</ul>
+<p>Mechanistic models tend to have higher bias and lower variance because their strong assumptions may oversimplify the true underlying relationships, potentially leading to underfitting. Empirically driven models, on the other hand, tend to have lower bias but higher variance, as their flexibility allows them to better capture complex patterns but also increases the risk of overfitting. This reflects the bias-variance trade-off between simplicity and flexibility.</p>
 </div>
 </div>
 </section>
@@ -2490,10 +2480,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Regression → predicts a continuous outcome (e.g., price, age)</li>
-<li>Classification → predicts a categorical outcome (e.g., yes/no, churn/no churn)</li>
-</ul>
+<p>Regression and classification are both types of supervised learning problems, meaning they rely on labeled data with a known target variable. Regression models are used to predict continuous numerical outcomes (e.g., price or age), while classification models are used to predict categorical outcomes or class labels (e.g., yes/no or churn/no churn).</p>
 </div>
 </div>
 </section>
@@ -2510,7 +2497,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Stratifying ensures that the distribution of the outcome variable is similar in both training and test sets, which makes evaluation more reliable.</p>
+<p>Stratifying ensures that the distribution of the outcome (target) variable is similar in both the training and test sets. This is especially important for imbalanced data, as it helps prevent one set from having disproportionately more of certain outcomes, leading to more reliable model training and evaluation.</p>
 </div>
 </div>
 </section>
@@ -2527,7 +2514,8 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>V-fold cross-validation with repeats involves splitting the dataset into (v) equally sized folds. For each iteration, one fold is used as a validation set while the remaining (v-1) folds are used for training. This process is repeated (v) times so that each fold serves as the validation set once. The entire procedure is then repeated multiple times with different random splits, and the RMSE is computed for each iteration and averaged to estimate test error.</p>
+<p>We use this approach to obtain a more reliable estimate of model performance on unseen data. By averaging results across multiple folds and repeats, it reduces the variability that can result from a single train-test split and provides a more stable and robust estimate of test RMSE.</p>
 </div>
 </div>
 </section>
