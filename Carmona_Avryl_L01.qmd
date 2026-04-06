@@ -215,7 +215,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Bootstrap resampling may be preferred over v-fold cross-validation when the dataset is small or when we want to better estimate the variability of model performance. By repeatedly sampling with replacement and evaluating the model on out-of-bag observations, bootstrap allows us to make more efficient use of limited data and obtain a distribution of RMSE estimates. This can provide insight into the stability and uncertainty of the model’s performance, which v-fold cross-validation does not capture as directly.
 
 :::
 
@@ -226,7 +226,9 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Model tuning refers to the process of selecting the best values for a model’s hyperparameters in order to improve performance. This is typically done by training multiple versions of a model with different hyperparameter settings and evaluating them using a validation method such as cross-validation.
+
+We use model tuning to optimize predictive performance and ensure the model generalizes well to new data, rather than relying on arbitrary or default parameter choices.
 
 :::
 
@@ -237,7 +239,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Two common performance metrics for regression problems are Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE). Both measure the difference between predicted and actual values, with RMSE placing greater emphasis on larger errors.
 
 :::
 
@@ -246,7 +248,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Two common performance metrics for classification problems are accuracy and precision. Accuracy measures the proportion of correctly classified observations, while precision measures the proportion of true positive predictions among all positive predictions.
 
 :::
 
@@ -261,7 +263,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is an inferential problem because the goal is to understand the relationship between a specific variable (number of service calls) and the outcome (churn). The focus is on determining whether this variable has an effect on churn, rather than making predictions for individual customers.
 
 :::
 
@@ -270,7 +272,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is a predictive problem because the goal is to estimate the probability that a customer will churn in the future. The focus is on generating accurate predictions for individual customers, rather than understanding the effect of specific variables.
 
 :::
 
